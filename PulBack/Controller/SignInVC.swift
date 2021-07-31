@@ -38,12 +38,19 @@ class SignInVC: UIViewController {
         
         if isSmallScreen() {
             infoLbl.font = UIFont.systemFont(ofSize: 15)
-            pulBackBtnHeight.constant = 45
+            //pulBackBtnHeight.constant = 45
             signInBtn.titleLabel?.font = UIFont.systemFont(ofSize: 17)
             textField.font = UIFont.systemFont(ofSize: 16)
         }
 
     }
+    
+    
+    @IBAction func enterBtnTapped(_ sender: Any) {
+        let vc = RegistrationVC(nibName: "RegistrationVC", bundle: nil)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 
 }
 

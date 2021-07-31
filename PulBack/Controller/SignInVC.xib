@@ -13,7 +13,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInVC" customModule="PulBack" customModuleProvider="target">
             <connections>
                 <outlet property="infoLbl" destination="6gS-MH-C8L" id="gMc-He-uaS"/>
-                <outlet property="pulBackBtnHeight" destination="bzF-MB-dpk" id="nCM-Nm-cZl"/>
                 <outlet property="signInBtn" destination="YbO-jf-lt1" id="gc9-Tl-9dV"/>
                 <outlet property="textField" destination="tNr-Is-f3Q" id="JNB-wf-CFR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -25,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="t5D-GU-9BE">
-                    <rect key="frame" x="62" y="249.5" width="290" height="397"/>
+                    <rect key="frame" x="62" y="276.5" width="290" height="343"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pulback" translatesAutoresizingMaskIntoConstraints="NO" id="ZmA-y0-Ddl">
                             <rect key="frame" x="87" y="0.0" width="116" height="115.5"/>
@@ -34,31 +33,31 @@
                             </constraints>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ywu-o8-3dj">
-                            <rect key="frame" x="0.0" y="150.5" width="290" height="246.5"/>
+                            <rect key="frame" x="0.0" y="150.5" width="290" height="192.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gEN-aB-dHl">
-                                    <rect key="frame" x="0.0" y="0.0" width="290" height="135"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="290" height="81"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tNr-Is-f3Q" customClass="FPNTextField" customModule="FlagPhoneNumber">
-                                            <rect key="frame" x="0.0" y="0.0" width="290" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="33"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbO-jf-lt1">
-                                            <rect key="frame" x="0.0" y="75" width="290" height="60"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbO-jf-lt1" customClass="CustomButton" customModule="PulBack" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="48" width="290" height="33"/>
                                             <color key="backgroundColor" name="customRed"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="60" id="bzF-MB-dpk"/>
-                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                             <state key="normal" title="PulBack га кириш">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="enterBtnTapped:" destination="-1" eventType="touchUpInside" id="kYf-ft-Ygd"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyh-2O-e7k">
-                                    <rect key="frame" x="0.0" y="155" width="290" height="91.5"/>
+                                    <rect key="frame" x="0.0" y="101" width="290" height="91.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Агар PulBack дан аввал фойдаланмаган болсангиз мана бундан бошланг" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gS-MH-C8L">
                                             <rect key="frame" x="5" y="0.0" width="280" height="91.5"/>
@@ -99,7 +98,7 @@
             <color red="0.84700000286102295" green="0.32899999618530273" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

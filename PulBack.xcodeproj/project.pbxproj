@@ -16,6 +16,14 @@
 		D0790A5126B2C68B00BA9EFE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0790A5026B2C68B00BA9EFE /* Extensions.swift */; };
 		D07FF02A26B51CF0009C1FE6 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FF02826B51CF0009C1FE6 /* RegistrationVC.swift */; };
 		D07FF02B26B51CF0009C1FE6 /* RegistrationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07FF02926B51CF0009C1FE6 /* RegistrationVC.xib */; };
+		D07FF03626B5262B009C1FE6 /* OTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FF03426B5262B009C1FE6 /* OTPVC.swift */; };
+		D07FF03726B5262B009C1FE6 /* OTPVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07FF03526B5262B009C1FE6 /* OTPVC.xib */; };
+		D07FF03A26B52B53009C1FE6 /* OTPFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FF03926B52B53009C1FE6 /* OTPFieldView.swift */; };
+		D07FF03D26B52C1C009C1FE6 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FF03C26B52C1C009C1FE6 /* OTPTextField.swift */; };
+		D07FF05626B55DA6009C1FE6 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FF05526B55DA6009C1FE6 /* TimerView.swift */; };
+		D07FF08126B56E3B009C1FE6 /* reload.json in Resources */ = {isa = PBXBuildFile; fileRef = D07FF08026B56E3A009C1FE6 /* reload.json */; };
+		D07FF08626B56EDD009C1FE6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FF08526B56EDD009C1FE6 /* CustomButton.swift */; };
+		D07FF08926B56FD8009C1FE6 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FF08826B56FD8009C1FE6 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,14 @@
 		D0790A5026B2C68B00BA9EFE /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D07FF02826B51CF0009C1FE6 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		D07FF02926B51CF0009C1FE6 /* RegistrationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationVC.xib; sourceTree = "<group>"; };
+		D07FF03426B5262B009C1FE6 /* OTPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVC.swift; sourceTree = "<group>"; };
+		D07FF03526B5262B009C1FE6 /* OTPVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVC.xib; sourceTree = "<group>"; };
+		D07FF03926B52B53009C1FE6 /* OTPFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPFieldView.swift; sourceTree = "<group>"; };
+		D07FF03C26B52C1C009C1FE6 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		D07FF05526B55DA6009C1FE6 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		D07FF08026B56E3A009C1FE6 /* reload.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reload.json; sourceTree = "<group>"; };
+		D07FF08526B56EDD009C1FE6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D07FF08826B56FD8009C1FE6 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +100,7 @@
 		D0790A3126B2C4B500BA9EFE /* PulBack */ = {
 			isa = PBXGroup;
 			children = (
-				D0790A4F26B2C67F00BA9EFE /* Helpers */,
+				D07FF06F26B56626009C1FE6 /* File */,
 				D0790A6726B2CC3400BA9EFE /* Model */,
 				D0790A6626B2CC3000BA9EFE /* View */,
 				D0790A6526B2CC2800BA9EFE /* Controller */,
@@ -100,6 +116,10 @@
 			isa = PBXGroup;
 			children = (
 				D0790A5026B2C68B00BA9EFE /* Extensions.swift */,
+				D07FF08826B56FD8009C1FE6 /* AppColors.swift */,
+				D07FF03926B52B53009C1FE6 /* OTPFieldView.swift */,
+				D07FF03C26B52C1C009C1FE6 /* OTPTextField.swift */,
+				D07FF05526B55DA6009C1FE6 /* TimerView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -111,6 +131,8 @@
 				D0790A4926B2C4EB00BA9EFE /* SignInVC.xib */,
 				D07FF02826B51CF0009C1FE6 /* RegistrationVC.swift */,
 				D07FF02926B51CF0009C1FE6 /* RegistrationVC.xib */,
+				D07FF03426B5262B009C1FE6 /* OTPVC.swift */,
+				D07FF03526B5262B009C1FE6 /* OTPVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -125,8 +147,26 @@
 		D0790A6726B2CC3400BA9EFE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D07FF08526B56EDD009C1FE6 /* CustomButton.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D07FF06F26B56626009C1FE6 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				D0790A4F26B2C67F00BA9EFE /* Helpers */,
+				D07FF07026B5662C009C1FE6 /* Lottie */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		D07FF07026B5662C009C1FE6 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				D07FF08026B56E3A009C1FE6 /* reload.json */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,8 +230,10 @@
 			files = (
 				D0790A4B26B2C4EB00BA9EFE /* SignInVC.xib in Resources */,
 				D0790A3F26B2C4B600BA9EFE /* LaunchScreen.storyboard in Resources */,
+				D07FF03726B5262B009C1FE6 /* OTPVC.xib in Resources */,
 				D0790A3C26B2C4B600BA9EFE /* Assets.xcassets in Resources */,
 				D07FF02B26B51CF0009C1FE6 /* RegistrationVC.xib in Resources */,
+				D07FF08126B56E3B009C1FE6 /* reload.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,8 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07FF05626B55DA6009C1FE6 /* TimerView.swift in Sources */,
+				D07FF03626B5262B009C1FE6 /* OTPVC.swift in Sources */,
+				D07FF08626B56EDD009C1FE6 /* CustomButton.swift in Sources */,
+				D07FF08926B56FD8009C1FE6 /* AppColors.swift in Sources */,
+				D07FF03D26B52C1C009C1FE6 /* OTPTextField.swift in Sources */,
 				D0790A4A26B2C4EB00BA9EFE /* SignInVC.swift in Sources */,
 				D0790A5126B2C68B00BA9EFE /* Extensions.swift in Sources */,
+				D07FF03A26B52B53009C1FE6 /* OTPFieldView.swift in Sources */,
 				D0790A3326B2C4B500BA9EFE /* AppDelegate.swift in Sources */,
 				D07FF02A26B51CF0009C1FE6 /* RegistrationVC.swift in Sources */,
 			);
