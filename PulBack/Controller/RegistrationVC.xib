@@ -12,8 +12,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationVC" customModule="PulBack" customModuleProvider="target">
             <connections>
+                <outlet property="buyLbl" destination="3U2-We-PYX" id="2nb-Bv-w5t"/>
                 <outlet property="checkBtn" destination="FO6-up-Azq" id="FQo-gC-zxf"/>
+                <outlet property="heightForTF" destination="2im-ud-oIk" id="1X4-fc-roy"/>
                 <outlet property="nameTF" destination="5gc-hp-qos" id="yLv-cW-EQP"/>
+                <outlet property="openPageLbl" destination="LLF-k7-Cmc" id="Gve-hM-1p8"/>
+                <outlet property="registrationBtn" destination="rsX-SY-U5z" id="HBr-ar-YgA"/>
+                <outlet property="registrationLbl" destination="JH0-Q5-W1b" id="1B8-Ap-LcW"/>
                 <outlet property="surNameTF" destination="m55-Gp-OQh" id="o28-uh-dUv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

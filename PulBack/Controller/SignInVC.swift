@@ -22,7 +22,9 @@ class SignInVC: UIViewController {
         super.viewDidLoad()
         setup()
         lblLink()
+        registerKeyboardNotifications()
         navigationController?.navigationBar.isHidden = true
+        
     }
     
     func setup() {
@@ -36,7 +38,7 @@ class SignInVC: UIViewController {
         textField.setFlag(countryCode: .UZ)
         textField.flagButtonSize = CGSize(width: 47, height: 44)
         
-        if isSmallScreen() {
+        if isSmallScreen {
             infoLbl.font = UIFont.systemFont(ofSize: 15)
             //pulBackBtnHeight.constant = 45
             signInBtn.titleLabel?.font = UIFont.systemFont(ofSize: 17)
@@ -66,7 +68,7 @@ extension SignInVC {
             .foregroundColor,
             value: UIColor.black,
             range: termsRange)
-        if isSmallScreen() {
+        if isSmallScreen {
             underlineAttriString.addAttribute(
                 .font, value:UIFont.systemFont(ofSize: 15, weight: .medium), range: termsRange)
         }else {
@@ -89,4 +91,55 @@ extension SignInVC {
             print("lbl")
         }
     }
+}
+
+
+//MARK: - Keyboard Handling
+
+extension SignInVC {
+    
+    func registerKeyboardNotifications() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        self.view.addGestureRecognizer(tap)
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillShow(notification:)),
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil)
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillHide(notification:)),
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil)
+        
+    }
+    @objc func hideKeyboard() {
+        self.view.endEditing(true)
+        
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        let userInfo: NSDictionary = notification.userInfo! as NSDictionary
+        let keyboardInfo = userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue
+        let _ = keyboardInfo.cgRectValue.size
+        
+        
+        UIView.animate(withDuration: 0.5) {
+            if self.isSmallScreen{
+                self.view.transform = CGAffineTransform(translationX: 0, y: -100)
+            }else{
+                self.view.transform = CGAffineTransform(translationX: 0, y: -50)
+            }
+            
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        UIView.animate(withDuration: 0.5) {
+            self.view.transform = .identity
+        }
+    }
+
 }

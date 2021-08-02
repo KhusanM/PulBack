@@ -12,14 +12,14 @@ class OTPVC: UIViewController {
     
     @IBOutlet weak var phoneNumberLbl: UILabel!{
         didSet{
-            if isSmallScreen(){
+            if isSmallScreen{
                 phoneNumberLbl.font = UIFont.systemFont(ofSize: 15)
             }
         }
     }
     @IBOutlet weak var helpLbl: UILabel!{
         didSet{
-            if isSmallScreen(){
+            if isSmallScreen{
                 helpLbl.font = UIFont.systemFont(ofSize: 15)
             }
         }
@@ -36,7 +36,7 @@ class OTPVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupOtpView()
-        circleView.createCircularPath(radius: 30, lineWidth: 5, bgLineColor: .clear, progressColor: .green, firstDuration: 6)
+        circleView.createCircularPath(radius: 30, lineWidth: 5, bgLineColor: .clear, progressColor: .green, firstDuration: 60)
         circleView.progressAnimation()
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap)))
 
@@ -68,7 +68,9 @@ class OTPVC: UIViewController {
     
     
     @IBAction func confirmBtnTapped(_ sender: Any) {
-        
+        let vc = TabbarVC()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
     }
     
 }

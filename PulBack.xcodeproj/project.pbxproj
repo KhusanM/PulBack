@@ -24,6 +24,21 @@
 		D07FF08126B56E3B009C1FE6 /* reload.json in Resources */ = {isa = PBXBuildFile; fileRef = D07FF08026B56E3A009C1FE6 /* reload.json */; };
 		D07FF08626B56EDD009C1FE6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FF08526B56EDD009C1FE6 /* CustomButton.swift */; };
 		D07FF08926B56FD8009C1FE6 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FF08826B56FD8009C1FE6 /* AppColors.swift */; };
+		D0B5E50F26B7AAC500D5A6CE /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5E50E26B7AAC500D5A6CE /* TabbarVC.swift */; };
+		D0B5E51326B7AB2C00D5A6CE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5E51126B7AB2C00D5A6CE /* HomeVC.swift */; };
+		D0B5E51426B7AB2C00D5A6CE /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B5E51226B7AB2C00D5A6CE /* HomeVC.xib */; };
+		D0B5E51826B7AB4100D5A6CE /* QrCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5E51626B7AB4100D5A6CE /* QrCodeVC.swift */; };
+		D0B5E51926B7AB4100D5A6CE /* QrCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B5E51726B7AB4100D5A6CE /* QrCodeVC.xib */; };
+		D0B5E51D26B7AB4B00D5A6CE /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5E51B26B7AB4B00D5A6CE /* MoreVC.swift */; };
+		D0B5E51E26B7AB4B00D5A6CE /* MoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B5E51C26B7AB4B00D5A6CE /* MoreVC.xib */; };
+		D0B5E52B26B7B1AA00D5A6CE /* BannerTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5E52926B7B1AA00D5A6CE /* BannerTVC.swift */; };
+		D0B5E52C26B7B1AA00D5A6CE /* BannerTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B5E52A26B7B1AA00D5A6CE /* BannerTVC.xib */; };
+		D0B5E53026B7B1B900D5A6CE /* MagazinTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5E52E26B7B1B900D5A6CE /* MagazinTVC.swift */; };
+		D0B5E53126B7B1B900D5A6CE /* MagazinTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B5E52F26B7B1B900D5A6CE /* MagazinTVC.xib */; };
+		D0B5E53726B7B25300D5A6CE /* BalanceTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5E53526B7B25300D5A6CE /* BalanceTVC.swift */; };
+		D0B5E53826B7B25300D5A6CE /* BalanceTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B5E53626B7B25300D5A6CE /* BalanceTVC.xib */; };
+		D0B5E54A26B7F0E500D5A6CE /* BannerImageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5E54826B7F0E500D5A6CE /* BannerImageCVC.swift */; };
+		D0B5E54B26B7F0E500D5A6CE /* BannerImageCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B5E54926B7F0E500D5A6CE /* BannerImageCVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +63,21 @@
 		D07FF08026B56E3A009C1FE6 /* reload.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reload.json; sourceTree = "<group>"; };
 		D07FF08526B56EDD009C1FE6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		D07FF08826B56FD8009C1FE6 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		D0B5E50E26B7AAC500D5A6CE /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
+		D0B5E51126B7AB2C00D5A6CE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		D0B5E51226B7AB2C00D5A6CE /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		D0B5E51626B7AB4100D5A6CE /* QrCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeVC.swift; sourceTree = "<group>"; };
+		D0B5E51726B7AB4100D5A6CE /* QrCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QrCodeVC.xib; sourceTree = "<group>"; };
+		D0B5E51B26B7AB4B00D5A6CE /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		D0B5E51C26B7AB4B00D5A6CE /* MoreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreVC.xib; sourceTree = "<group>"; };
+		D0B5E52926B7B1AA00D5A6CE /* BannerTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTVC.swift; sourceTree = "<group>"; };
+		D0B5E52A26B7B1AA00D5A6CE /* BannerTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerTVC.xib; sourceTree = "<group>"; };
+		D0B5E52E26B7B1B900D5A6CE /* MagazinTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazinTVC.swift; sourceTree = "<group>"; };
+		D0B5E52F26B7B1B900D5A6CE /* MagazinTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MagazinTVC.xib; sourceTree = "<group>"; };
+		D0B5E53526B7B25300D5A6CE /* BalanceTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTVC.swift; sourceTree = "<group>"; };
+		D0B5E53626B7B25300D5A6CE /* BalanceTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceTVC.xib; sourceTree = "<group>"; };
+		D0B5E54826B7F0E500D5A6CE /* BannerImageCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerImageCVC.swift; sourceTree = "<group>"; };
+		D0B5E54926B7F0E500D5A6CE /* BannerImageCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerImageCVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +163,12 @@
 				D07FF02926B51CF0009C1FE6 /* RegistrationVC.xib */,
 				D07FF03426B5262B009C1FE6 /* OTPVC.swift */,
 				D07FF03526B5262B009C1FE6 /* OTPVC.xib */,
+				D0B5E50E26B7AAC500D5A6CE /* TabbarVC.swift */,
+				D0B5E55426B7FA4300D5A6CE /* HomeVC */,
+				D0B5E51626B7AB4100D5A6CE /* QrCodeVC.swift */,
+				D0B5E51726B7AB4100D5A6CE /* QrCodeVC.xib */,
+				D0B5E51B26B7AB4B00D5A6CE /* MoreVC.swift */,
+				D0B5E51C26B7AB4B00D5A6CE /* MoreVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -167,6 +203,39 @@
 				D07FF08026B56E3A009C1FE6 /* reload.json */,
 			);
 			path = Lottie;
+			sourceTree = "<group>";
+		};
+		D0B5E52126B7B08400D5A6CE /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				D0B5E52326B7B09500D5A6CE /* CVC */,
+				D0B5E53526B7B25300D5A6CE /* BalanceTVC.swift */,
+				D0B5E53626B7B25300D5A6CE /* BalanceTVC.xib */,
+				D0B5E52926B7B1AA00D5A6CE /* BannerTVC.swift */,
+				D0B5E52A26B7B1AA00D5A6CE /* BannerTVC.xib */,
+				D0B5E52E26B7B1B900D5A6CE /* MagazinTVC.swift */,
+				D0B5E52F26B7B1B900D5A6CE /* MagazinTVC.xib */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		D0B5E52326B7B09500D5A6CE /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				D0B5E54826B7F0E500D5A6CE /* BannerImageCVC.swift */,
+				D0B5E54926B7F0E500D5A6CE /* BannerImageCVC.xib */,
+			);
+			path = CVC;
+			sourceTree = "<group>";
+		};
+		D0B5E55426B7FA4300D5A6CE /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				D0B5E52126B7B08400D5A6CE /* TVC */,
+				D0B5E51126B7AB2C00D5A6CE /* HomeVC.swift */,
+				D0B5E51226B7AB2C00D5A6CE /* HomeVC.xib */,
+			);
+			path = HomeVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,11 +298,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0790A4B26B2C4EB00BA9EFE /* SignInVC.xib in Resources */,
+				D0B5E51E26B7AB4B00D5A6CE /* MoreVC.xib in Resources */,
 				D0790A3F26B2C4B600BA9EFE /* LaunchScreen.storyboard in Resources */,
+				D0B5E53126B7B1B900D5A6CE /* MagazinTVC.xib in Resources */,
+				D0B5E54B26B7F0E500D5A6CE /* BannerImageCVC.xib in Resources */,
 				D07FF03726B5262B009C1FE6 /* OTPVC.xib in Resources */,
 				D0790A3C26B2C4B600BA9EFE /* Assets.xcassets in Resources */,
+				D0B5E51926B7AB4100D5A6CE /* QrCodeVC.xib in Resources */,
 				D07FF02B26B51CF0009C1FE6 /* RegistrationVC.xib in Resources */,
 				D07FF08126B56E3B009C1FE6 /* reload.json in Resources */,
+				D0B5E52C26B7B1AA00D5A6CE /* BannerTVC.xib in Resources */,
+				D0B5E53826B7B25300D5A6CE /* BalanceTVC.xib in Resources */,
+				D0B5E51426B7AB2C00D5A6CE /* HomeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,15 +362,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B5E54A26B7F0E500D5A6CE /* BannerImageCVC.swift in Sources */,
 				D07FF05626B55DA6009C1FE6 /* TimerView.swift in Sources */,
 				D07FF03626B5262B009C1FE6 /* OTPVC.swift in Sources */,
+				D0B5E50F26B7AAC500D5A6CE /* TabbarVC.swift in Sources */,
+				D0B5E51D26B7AB4B00D5A6CE /* MoreVC.swift in Sources */,
 				D07FF08626B56EDD009C1FE6 /* CustomButton.swift in Sources */,
 				D07FF08926B56FD8009C1FE6 /* AppColors.swift in Sources */,
 				D07FF03D26B52C1C009C1FE6 /* OTPTextField.swift in Sources */,
+				D0B5E53726B7B25300D5A6CE /* BalanceTVC.swift in Sources */,
 				D0790A4A26B2C4EB00BA9EFE /* SignInVC.swift in Sources */,
+				D0B5E51826B7AB4100D5A6CE /* QrCodeVC.swift in Sources */,
 				D0790A5126B2C68B00BA9EFE /* Extensions.swift in Sources */,
 				D07FF03A26B52B53009C1FE6 /* OTPFieldView.swift in Sources */,
+				D0B5E53026B7B1B900D5A6CE /* MagazinTVC.swift in Sources */,
+				D0B5E51326B7AB2C00D5A6CE /* HomeVC.swift in Sources */,
 				D0790A3326B2C4B500BA9EFE /* AppDelegate.swift in Sources */,
+				D0B5E52B26B7B1AA00D5A6CE /* BannerTVC.swift in Sources */,
 				D07FF02A26B51CF0009C1FE6 /* RegistrationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -130,7 +130,7 @@ class TimerView: UIView {
                 timer.invalidate()
                 refreshBtn.isHidden = false
                 lblCount.isHidden = true
-                duration = duration*2
+                //duration = duration*2
             } else {
                 count -= 1
             }

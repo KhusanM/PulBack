@@ -9,10 +9,20 @@ import UIKit
 
 extension UIViewController {
     
-    func isSmallScreen()-> Bool {
-         UIScreen.main.bounds.height < 650
+    var isSmallScreen : Bool {
+        if UIScreen.main.bounds.height < 600 {
+            return true
+        }
+        return false
     }
     
+}
+
+//MARK: - UINavigation Bar
+extension UINavigationBar {
+    func shouldRemoveShadow(_ value: Bool) -> Void {
+        self.setValue(value, forKey: "hidesShadow")
+    }
 }
 
 extension UITapGestureRecognizer{
