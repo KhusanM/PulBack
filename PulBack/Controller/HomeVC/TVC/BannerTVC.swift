@@ -22,22 +22,34 @@ class BannerTVC: UITableViewCell {
         }
     }
     
-    @IBOutlet weak var pageContr: UIPageControl!
+    @IBOutlet weak var pageContr: SnakePageControl!
     @IBOutlet weak var heightForImg: NSLayoutConstraint!
     
+    var scrollingTimer = Timer()
     var images = ["img1","img2","img3","img4","img5"]
-    
+    var counter = 0
     override func awakeFromNib() {
         super.awakeFromNib()
-        pageContr.numberOfPages = images.count
+        pageContr.pageCount = images.count
+        DispatchQueue.main.async {
+            self.scrollingTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
+        }
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
+    @objc func changeImage(){
+        if counter < images.count{
+            let index = IndexPath.init(item: counter, section: 0)
+            self.collectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+            
+            counter += 1
+        }else{
+            counter = 0
+            let index = IndexPath.init(item: counter, section: 0)
+            self.collectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+            
+        }
+    }
     
     @IBAction func pageController(_ sender: Any) {
         
@@ -64,11 +76,10 @@ extension BannerTVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let offSet = scrollView.contentOffset.x
-        let width = scrollView.frame.width
-        let horizontalCenter = width / 2
+        let offSet = scrollView.contentOffset.x/scrollView.bounds.width
+      
 
-        pageContr.currentPage = Int(offSet + horizontalCenter) / Int(width)
+        pageContr.progress = CGFloat(offSet)
     }
 
 }

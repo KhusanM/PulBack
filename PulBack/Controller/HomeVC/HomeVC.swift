@@ -24,14 +24,13 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         initNavigation()
         
-        
-        
     }
     
     private func initNavigation(){
         navigationController?.navigationBar.isTranslucent = false
         navigationItem.title = "PulBack"
         navigationController?.navigationBar.shouldRemoveShadow(true)
+        
     }
 
     
@@ -73,5 +72,10 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
         }
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 2{
+            let vc = MagazinVC(nibName: "MagazinVC", bundle: nil)
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }

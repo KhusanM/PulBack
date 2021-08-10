@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4A30443DF9047DA31FFDA90F /* Pods_PulBack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D00B0D9ADE837E10402F76E /* Pods_PulBack.framework */; };
+		D056E5B126BD424400700DDF /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056E5AF26BD424400700DDF /* SettingsVC.swift */; };
+		D056E5B226BD424400700DDF /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D056E5B026BD424400700DDF /* SettingsVC.xib */; };
+		D061249226BD474A002B3D10 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D061249026BD474A002B3D10 /* EditProfile.swift */; };
+		D061249326BD474A002B3D10 /* EditProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = D061249126BD474A002B3D10 /* EditProfile.xib */; };
+		D061249726BD4CFC002B3D10 /* MagazinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D061249526BD4CFC002B3D10 /* MagazinVC.swift */; };
+		D061249826BD4CFC002B3D10 /* MagazinVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D061249626BD4CFC002B3D10 /* MagazinVC.xib */; };
+		D06124ED26BE9CE6002B3D10 /* LogOutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D06124EB26BE9CE5002B3D10 /* LogOutVC.xib */; };
+		D06124EE26BE9CE6002B3D10 /* LogOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06124EC26BE9CE6002B3D10 /* LogOutVC.swift */; };
 		D0790A3326B2C4B500BA9EFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0790A3226B2C4B500BA9EFE /* AppDelegate.swift */; };
 		D0790A3C26B2C4B600BA9EFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0790A3B26B2C4B600BA9EFE /* Assets.xcassets */; };
 		D0790A3F26B2C4B600BA9EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0790A3D26B2C4B600BA9EFE /* LaunchScreen.storyboard */; };
@@ -24,6 +32,7 @@
 		D07FF08126B56E3B009C1FE6 /* reload.json in Resources */ = {isa = PBXBuildFile; fileRef = D07FF08026B56E3A009C1FE6 /* reload.json */; };
 		D07FF08626B56EDD009C1FE6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FF08526B56EDD009C1FE6 /* CustomButton.swift */; };
 		D07FF08926B56FD8009C1FE6 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FF08826B56FD8009C1FE6 /* AppColors.swift */; };
+		D087EB0126BC127500B73119 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D087EB0026BC127500B73119 /* PageController.swift */; };
 		D0B5E50F26B7AAC500D5A6CE /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5E50E26B7AAC500D5A6CE /* TabbarVC.swift */; };
 		D0B5E51326B7AB2C00D5A6CE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5E51126B7AB2C00D5A6CE /* HomeVC.swift */; };
 		D0B5E51426B7AB2C00D5A6CE /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B5E51226B7AB2C00D5A6CE /* HomeVC.xib */; };
@@ -44,7 +53,15 @@
 /* Begin PBXFileReference section */
 		2D00B0D9ADE837E10402F76E /* Pods_PulBack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PulBack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBD1E04BA1C773AB3F4D321 /* Pods-PulBack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulBack.release.xcconfig"; path = "Target Support Files/Pods-PulBack/Pods-PulBack.release.xcconfig"; sourceTree = "<group>"; };
+		D056E5AF26BD424400700DDF /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		D056E5B026BD424400700DDF /* SettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
 		D05C7EB18DF6B108DE3103AB /* Pods-PulBack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulBack.debug.xcconfig"; path = "Target Support Files/Pods-PulBack/Pods-PulBack.debug.xcconfig"; sourceTree = "<group>"; };
+		D061249026BD474A002B3D10 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
+		D061249126BD474A002B3D10 /* EditProfile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfile.xib; sourceTree = "<group>"; };
+		D061249526BD4CFC002B3D10 /* MagazinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazinVC.swift; sourceTree = "<group>"; };
+		D061249626BD4CFC002B3D10 /* MagazinVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MagazinVC.xib; sourceTree = "<group>"; };
+		D06124EB26BE9CE5002B3D10 /* LogOutVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogOutVC.xib; sourceTree = "<group>"; };
+		D06124EC26BE9CE6002B3D10 /* LogOutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOutVC.swift; sourceTree = "<group>"; };
 		D0790A2F26B2C4B500BA9EFE /* PulBack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulBack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0790A3226B2C4B500BA9EFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0790A3B26B2C4B600BA9EFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +80,7 @@
 		D07FF08026B56E3A009C1FE6 /* reload.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reload.json; sourceTree = "<group>"; };
 		D07FF08526B56EDD009C1FE6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		D07FF08826B56FD8009C1FE6 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		D087EB0026BC127500B73119 /* PageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 		D0B5E50E26B7AAC500D5A6CE /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
 		D0B5E51126B7AB2C00D5A6CE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		D0B5E51226B7AB2C00D5A6CE /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
@@ -109,6 +127,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D056E5AE26BD421F00700DDF /* MoreVC */ = {
+			isa = PBXGroup;
+			children = (
+				D0B5E51B26B7AB4B00D5A6CE /* MoreVC.swift */,
+				D0B5E51C26B7AB4B00D5A6CE /* MoreVC.xib */,
+				D056E5AF26BD424400700DDF /* SettingsVC.swift */,
+				D056E5B026BD424400700DDF /* SettingsVC.xib */,
+				D061249026BD474A002B3D10 /* EditProfile.swift */,
+				D061249126BD474A002B3D10 /* EditProfile.xib */,
+				D06124EC26BE9CE6002B3D10 /* LogOutVC.swift */,
+				D06124EB26BE9CE5002B3D10 /* LogOutVC.xib */,
+			);
+			path = MoreVC;
+			sourceTree = "<group>";
+		};
 		D0790A2626B2C4B500BA9EFE = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +183,7 @@
 				D07FF03926B52B53009C1FE6 /* OTPFieldView.swift */,
 				D07FF03C26B52C1C009C1FE6 /* OTPTextField.swift */,
 				D07FF05526B55DA6009C1FE6 /* TimerView.swift */,
+				D087EB0026BC127500B73119 /* PageController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -167,8 +201,7 @@
 				D0B5E55426B7FA4300D5A6CE /* HomeVC */,
 				D0B5E51626B7AB4100D5A6CE /* QrCodeVC.swift */,
 				D0B5E51726B7AB4100D5A6CE /* QrCodeVC.xib */,
-				D0B5E51B26B7AB4B00D5A6CE /* MoreVC.swift */,
-				D0B5E51C26B7AB4B00D5A6CE /* MoreVC.xib */,
+				D056E5AE26BD421F00700DDF /* MoreVC */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,6 +267,8 @@
 				D0B5E52126B7B08400D5A6CE /* TVC */,
 				D0B5E51126B7AB2C00D5A6CE /* HomeVC.swift */,
 				D0B5E51226B7AB2C00D5A6CE /* HomeVC.xib */,
+				D061249526BD4CFC002B3D10 /* MagazinVC.swift */,
+				D061249626BD4CFC002B3D10 /* MagazinVC.xib */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -306,9 +341,13 @@
 				D0790A3C26B2C4B600BA9EFE /* Assets.xcassets in Resources */,
 				D0B5E51926B7AB4100D5A6CE /* QrCodeVC.xib in Resources */,
 				D07FF02B26B51CF0009C1FE6 /* RegistrationVC.xib in Resources */,
+				D061249326BD474A002B3D10 /* EditProfile.xib in Resources */,
 				D07FF08126B56E3B009C1FE6 /* reload.json in Resources */,
+				D06124ED26BE9CE6002B3D10 /* LogOutVC.xib in Resources */,
 				D0B5E52C26B7B1AA00D5A6CE /* BannerTVC.xib in Resources */,
+				D056E5B226BD424400700DDF /* SettingsVC.xib in Resources */,
 				D0B5E53826B7B25300D5A6CE /* BalanceTVC.xib in Resources */,
+				D061249826BD4CFC002B3D10 /* MagazinVC.xib in Resources */,
 				D0B5E51426B7AB2C00D5A6CE /* HomeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,23 +402,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B5E54A26B7F0E500D5A6CE /* BannerImageCVC.swift in Sources */,
+				D06124EE26BE9CE6002B3D10 /* LogOutVC.swift in Sources */,
 				D07FF05626B55DA6009C1FE6 /* TimerView.swift in Sources */,
 				D07FF03626B5262B009C1FE6 /* OTPVC.swift in Sources */,
 				D0B5E50F26B7AAC500D5A6CE /* TabbarVC.swift in Sources */,
 				D0B5E51D26B7AB4B00D5A6CE /* MoreVC.swift in Sources */,
+				D061249226BD474A002B3D10 /* EditProfile.swift in Sources */,
 				D07FF08626B56EDD009C1FE6 /* CustomButton.swift in Sources */,
 				D07FF08926B56FD8009C1FE6 /* AppColors.swift in Sources */,
 				D07FF03D26B52C1C009C1FE6 /* OTPTextField.swift in Sources */,
 				D0B5E53726B7B25300D5A6CE /* BalanceTVC.swift in Sources */,
+				D056E5B126BD424400700DDF /* SettingsVC.swift in Sources */,
 				D0790A4A26B2C4EB00BA9EFE /* SignInVC.swift in Sources */,
 				D0B5E51826B7AB4100D5A6CE /* QrCodeVC.swift in Sources */,
 				D0790A5126B2C68B00BA9EFE /* Extensions.swift in Sources */,
 				D07FF03A26B52B53009C1FE6 /* OTPFieldView.swift in Sources */,
 				D0B5E53026B7B1B900D5A6CE /* MagazinTVC.swift in Sources */,
+				D061249726BD4CFC002B3D10 /* MagazinVC.swift in Sources */,
 				D0B5E51326B7AB2C00D5A6CE /* HomeVC.swift in Sources */,
 				D0790A3326B2C4B500BA9EFE /* AppDelegate.swift in Sources */,
 				D0B5E52B26B7B1AA00D5A6CE /* BannerTVC.swift in Sources */,
 				D07FF02A26B51CF0009C1FE6 /* RegistrationVC.swift in Sources */,
+				D087EB0126BC127500B73119 /* PageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +564,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U23784U7DD;
 				INFOPLIST_FILE = PulBack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -540,6 +585,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U23784U7DD;
 				INFOPLIST_FILE = PulBack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

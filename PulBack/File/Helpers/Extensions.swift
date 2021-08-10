@@ -2,7 +2,7 @@
 //  Extensions.swift
 //  PulBack
 //
-//  Created by Kuziboev Siddikjon on 7/28/21.
+//  Created by Kh's MacBook on 7/28/21.
 //
 
 import UIKit
@@ -23,6 +23,7 @@ extension UINavigationBar {
     func shouldRemoveShadow(_ value: Bool) -> Void {
         self.setValue(value, forKey: "hidesShadow")
     }
+    
 }
 
 extension UITapGestureRecognizer{

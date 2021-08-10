@@ -73,6 +73,7 @@ extension RegistrationVC: UITextFieldDelegate{
         return true
     }
 }
+
 //MARK: - Keyboard Handling
 
 extension RegistrationVC {
@@ -94,6 +95,7 @@ extension RegistrationVC {
             object: nil)
         
     }
+    
     @objc func hideKeyboard() {
         self.view.endEditing(true)
         
