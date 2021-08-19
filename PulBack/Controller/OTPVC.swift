@@ -7,6 +7,16 @@
 
 import UIKit
 
+
+struct UserDM : Codable{
+    var first_name: String
+    var last_name: String
+    var point_balance: Double
+    var phone_number: String
+    var user_id: String
+    var token: String
+    
+}
 class OTPVC: UIViewController {
 
     
@@ -33,8 +43,12 @@ class OTPVC: UIViewController {
         }
     }
     
+    var phone_number = ""
+    var otp = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        UserDefaults.standard.setValue(true, forKey: "isLogged")
         setupOtpView()
         circleView.createCircularPath(radius: 30, lineWidth: 5, bgLineColor: .clear, progressColor: .green, firstDuration: 60)
         circleView.progressAnimation()
@@ -61,16 +75,47 @@ class OTPVC: UIViewController {
             self.otpTextFieldView.initializeUI()
     }
 
-  
+    private func sendUserDM(){
+        let param = [
+            "phone_number": phone_number,
+            "otp": otp
+        ]
+        
+            Network.request(url: "/client/sign-verify", method: .post, param: param, header: nil) { data in
+                if let data = data{
+                    let statusCode = data["code"].intValue
+                    
+                    switch statusCode {
+                    case 0:
+                        let user = UserDM(first_name: data["data"]["first_name"].stringValue,
+                                          last_name: data["data"]["last_name"].stringValue,
+                                          point_balance: data["data"]["point_balance"].doubleValue,
+                                          phone_number: data["data"]["phone_number"].stringValue,
+                                          user_id: data["data"]["user_id"].stringValue,
+                                          token: data["data"]["token"].stringValue)
+                        
+                        Cache.saveUser(user: user)
+                        
+                        if let window = UIApplication.shared.keyWindow{
+                            window.rootViewController = TabbarVC(nibName: "TabbarVC", bundle: nil)
+                            window.makeKeyAndVisible()
+                        }
+                    
+                    default:
+                        ShowAlert.showAlert(text: data["message"].stringValue, forState:.error)
+                    }
+                }
+            }
+        
+    }
     @IBAction func backBtnTapped(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
     
     
     @IBAction func confirmBtnTapped(_ sender: Any) {
-        let vc = TabbarVC()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
+        
+       sendUserDM()
     }
     
 }
@@ -82,7 +127,7 @@ extension OTPVC: OTPFieldViewDelegate{
     }
     
     func enteredOTP(otp: String) {
-        print(otp)
+        self.otp = otp
     }
     
     func hasEnteredAllOTP(hasEnteredAll: Bool) -> Bool {

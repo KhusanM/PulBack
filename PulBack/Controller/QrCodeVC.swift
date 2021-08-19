@@ -17,7 +17,10 @@ class QrCodeVC: UIViewController {
 
         
     }
-
+    @IBAction func closeBtnTapped(_ sender: Any) {
+        dismiss(animated: false, completion: nil)
+    }
+    
 
    
 

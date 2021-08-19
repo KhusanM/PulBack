@@ -57,5 +57,13 @@
         <string>$(PRODUCT_NAME) location use</string>
       <key>NSLocationWhenInUseUsageDescription</key>
         <string>$(PRODUCT_NAME) location use</string>
+        
+        
+        <key>NSAppTransportSecurity</key>
+              <dict>
+                <key>NSAllowsArbitraryLoads</key>
+                <true/>
+              </dict>
+              
 </dict>
 </plist>

@@ -24,7 +24,7 @@ class RegistrationVC: UIViewController {
     @IBOutlet weak var heightForTF: NSLayoutConstraint!
     
     
-    
+    var phone_number = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +45,38 @@ class RegistrationVC: UIViewController {
         }
     }
 
+    private func sendUserDM(){
+        let param = [
+            "first_name": nameTF.text!,
+            "last_name": surNameTF.text!,
+            "phone_number": phone_number
+        ]
+        
+        if nameTF.text!.isEmpty{
+            ShowAlert.showAlert(text: "Name must not be empty!", forState: .error)
+        }else if checkBtn.currentImage != UIImage(named: "check"){
+            ShowAlert.showAlert(text: "Check must not be empty!", forState: .error)
+        }else{
+            Network.request(url: "/client/sign-up", method: .post, param: param, header: nil) { data in
+                if let data = data{
+                    let statusCode = data["code"].intValue
+                    
+                    switch statusCode {
+                    case 0:
+                        
+                        let vc = OTPVC(nibName: "OTPVC", bundle: nil)
+                        vc.phone_number = self.phone_number
+                        self.navigationController?.pushViewController(vc, animated: true)
+                    default:
+                        ShowAlert.showAlert(text: data["message"].stringValue, forState:.error)
+                    }
+                }
+            }
+        }
+        
+        
+        
+    }
     @IBAction func checkBtnTapped(_ sender: Any) {
         if checkBtn.currentImage == UIImage(named: "check"){
             checkBtn.setImage(UIImage(named: "uncheck"), for: .normal)
@@ -57,8 +89,9 @@ class RegistrationVC: UIViewController {
     
     
     @IBAction func registrationBtnTapped(_ sender: Any) {
-        let vc = OTPVC(nibName: "OTPVC", bundle: nil)
-        navigationController?.pushViewController(vc, animated: true)
+        sendUserDM()
+        
+        
     }
     
 

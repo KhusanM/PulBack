@@ -58,6 +58,12 @@ class MoreVC: UIViewController {
     @IBAction func editProfileBtnTapped(_ sender: Any) {
         navigationController?.pushViewController(EditProfile(nibName: "EditProfile", bundle: nil), animated: true)
     }
+    @IBAction func languageBtnTapped(_ sender: Any) {
+        let vc = LanguageVC(nibName: "LanguageVC", bundle: nil)
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: false, completion: nil)
+        
+    }
     
 }
 

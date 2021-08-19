@@ -49,8 +49,36 @@ class SignInVC: UIViewController {
     
     
     @IBAction func enterBtnTapped(_ sender: Any) {
-        let vc = RegistrationVC(nibName: "RegistrationVC", bundle: nil)
-        navigationController?.pushViewController(vc, animated: true)
+        let url = "/client/sign-in"
+        print(textField.getFormattedPhoneNumber(format: .E164))
+        Network.request(url: url, method: .post, param: ["phone_number":textField.getFormattedPhoneNumber(format: .E164) ?? ""], header: nil) { [self] data in
+            if let data = data {
+                print(data)
+                let statusCode = data["code"].intValue
+                
+                switch statusCode {
+                case 0:
+                    
+                    
+                    let vc = OTPVC(nibName: "OTPVC", bundle: nil)
+                    vc.phone_number = self.textField.getFormattedPhoneNumber(format: .E164)!
+                    self.navigationController?.pushViewController(vc, animated: true)
+                    
+                case 11000:
+                    
+                    
+                    let vc = RegistrationVC(nibName: "RegistrationVC", bundle: nil)
+                    vc.phone_number = self.textField.getFormattedPhoneNumber(format: .E164)!
+                    self.navigationController?.pushViewController(vc, animated: true)
+                default:
+                    ShowAlert.showAlert(text: data["message"].stringValue, forState:.error)
+                }
+                
+                
+            }
+        }
+        
+       
     }
     
 
