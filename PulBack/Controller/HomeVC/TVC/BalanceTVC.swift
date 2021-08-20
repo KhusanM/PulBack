@@ -25,6 +25,8 @@ class BalanceTVC: UITableViewCell {
         // Initialization code
     }
 
-    
+    func updateCell(with balance: String){
+        self.sumLbl.text = balance
+    }
     
 }

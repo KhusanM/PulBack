@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreVC" customModule="PulBack" customModuleProvider="target">
             <connections>
+                <outlet property="fullNameLbl" destination="g2J-DD-6H9" id="mp3-Vl-gIf"/>
+                <outlet property="imgView" destination="xr0-tc-vUA" id="4en-Ke-nG6"/>
+                <outlet property="phoneNumberLbl" destination="kFA-Tf-6C2" id="yt0-ZV-P6T"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -39,14 +42,14 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-Js-eJE">
                             <rect key="frame" x="108" y="130" width="158" height="145.5"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khusan Masharipov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2J-DD-6H9">
-                                    <rect key="frame" x="1" y="0.0" width="156.5" height="20.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2J-DD-6H9">
+                                    <rect key="frame" x="60" y="0.0" width="38" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+998919180033" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFA-Tf-6C2">
-                                    <rect key="frame" x="22.5" y="35.5" width="113.5" height="18"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFA-Tf-6C2">
+                                    <rect key="frame" x="63" y="35.5" width="32.5" height="18"/>
                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>

@@ -11,4 +11,6 @@ struct Keys {
     
     
     static let user_info = "USER_INFO"
+    
+    static var TOKEN = "token"
 }

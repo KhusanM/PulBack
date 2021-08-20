@@ -31,11 +31,13 @@ class LogOutVC: UIViewController {
     }
     
     @IBAction func yesBtnTapped(_ sender: Any) {
-        let vc = SignInVC(nibName: "SignInVC", bundle: nil)
+        UserDefaults.standard.setValue(false, forKey: "isLogged")
+        if let window = UIApplication.shared.keyWindow{
+            window.rootViewController = UINavigationController(rootViewController: SignInVC(nibName: "SignInVC", bundle: nil))
+            window.makeKeyAndVisible()
+        }
         
-        let navvc = UINavigationController(rootViewController: vc)
-        navvc.modalPresentationStyle = .fullScreen
-        present(navvc, animated: false, completion: nil)
+        
     }
     
 

@@ -23,7 +23,7 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initNavigation()
-        
+        UserDefaults.standard.setValue(true, forKey: "isLogged")
     }
     
     private func initNavigation(){
@@ -52,6 +52,8 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
                     j.font = UIFont.systemFont(ofSize: 15, weight: .medium)
                 }
             }
+            
+            cell.updateCell(with: "\(Int(Cache.getUser()?.point_balance ?? 0))")
             
             return cell
             

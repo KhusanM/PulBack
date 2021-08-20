@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct Cache {
+class Cache {
     
     static func saveUser(user: UserDM){
         let encode = JSONEncoder()
@@ -26,6 +26,14 @@ struct Cache {
         }
         
         return nil
+    }
+    
+    class func saveUserToken(token:String?){
+        UserDefaults.standard.setValue(token, forKey: Keys.TOKEN)
+    }
+    
+    class func getUserToken() -> String{
+        return UserDefaults.standard.string(forKey: Keys.TOKEN)!
     }
     
 }

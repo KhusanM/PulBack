@@ -48,7 +48,7 @@ class OTPVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UserDefaults.standard.setValue(true, forKey: "isLogged")
+        
         setupOtpView()
         circleView.createCircularPath(radius: 30, lineWidth: 5, bgLineColor: .clear, progressColor: .green, firstDuration: 60)
         circleView.progressAnimation()
@@ -95,6 +95,8 @@ class OTPVC: UIViewController {
                                           token: data["data"]["token"].stringValue)
                         
                         Cache.saveUser(user: user)
+                        Cache.saveUserToken(token: data["data"]["token"].stringValue)
+                        
                         
                         if let window = UIApplication.shared.keyWindow{
                             window.rootViewController = TabbarVC(nibName: "TabbarVC", bundle: nil)

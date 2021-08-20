@@ -16,7 +16,7 @@ var window: UIWindow?
         window = UIWindow()
         UITabBar.appearance().tintColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
         
-        if let _ = Cache.getUser(){
+        if UserDefaults.standard.bool(forKey: "isLogged"){
             let vc = TabbarVC()
             window?.rootViewController = vc
         }else{

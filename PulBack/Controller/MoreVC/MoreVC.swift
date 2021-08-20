@@ -8,15 +8,33 @@
 import UIKit
 import BarcodeScanner
 
-class MoreVC: UIViewController {
 
+struct ProductDM {
+    var count : String
+    var price: String
+}
+
+class MoreVC: UIViewController {
+    @IBOutlet weak var imgView: UIImageView!
+    
+    @IBOutlet weak var fullNameLbl: UILabel!
+    @IBOutlet weak var phoneNumberLbl: UILabel!
+    
+    var product: [ProductDM] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imgView.image = UserDefaults.standard.imageForKey(key: "Img")
         initNavigation()
-        
+        updateUserInfo()
     }
-
+    
+    private func updateUserInfo(){
+        self.fullNameLbl.text = "\(Cache.getUser()?.first_name ?? "") \(Cache.getUser()?.last_name ?? "")"
+        self.phoneNumberLbl.text = "\(Cache.getUser()?.phone_number ?? "")"
+    }
+    
+    
     func initNavigation(){
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.shouldRemoveShadow(true)
@@ -55,6 +73,7 @@ class MoreVC: UIViewController {
             }
           }
         }
+    
     @IBAction func editProfileBtnTapped(_ sender: Any) {
         navigationController?.pushViewController(EditProfile(nibName: "EditProfile", bundle: nil), animated: true)
     }
@@ -71,7 +90,19 @@ class MoreVC: UIViewController {
 extension MoreVC: BarcodeScannerCodeDelegate {
   func scanner(_ controller: BarcodeScannerViewController, didCaptureCode code: String, type: String) {
     print(code)
+    
     controller.reset()
+    
+    Network.requestWithToken(url: "/item/get-by-barcode", method: .post, param: ["barcode" : code]) { data in
+        if let data = data{
+            print(data)
+            
+            self.product = data["data"]["prices"].arrayValue.map { item in ProductDM(count: item["from"].stringValue, price: item["price"].stringValue)
+                
+            }
+            print(self.product)
+        }
+    }
   }
 }
 
